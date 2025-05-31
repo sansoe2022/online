@@ -75,17 +75,17 @@
             <div class="collapse navbar-collapse" id="svpnNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="guidesim.html">
+                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/guidesim.html">
                             <i class="bi bi-journal-code me-1"></i> VPN နဲ့ ချိတ်သုံးဖို့ လမ်းညွှန်
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="extendsim.html">
+                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/extendsim.html">
                             <i class="bi bi-phone me-1"></i> ဆင်းမ်ကဒ် သက်တမ်းတိုးနည်း
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/">
                             <i class="bi bi-house-door me-1"></i> Home
                         </a>
                     </li>
