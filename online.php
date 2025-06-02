@@ -46,6 +46,12 @@
         .online {
             color: #00C853; font-weight: bold;
         }
+        .online-warning {
+            color: #FFD600; font-weight: bold; /* Yellow */
+        }
+        .online-danger {
+            color: #D32F2F; font-weight: bold; /* Red */
+        }
         .offline {
             color: #d32f2f; font-weight: bold;
         }
@@ -55,6 +61,17 @@
             font-weight: bold;
             font-size: 1.1rem;
         }
+        .status-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        .dot-green { background: #00C853; }
+        .dot-yellow { background: #FFD600; }
+        .dot-red { background: #D32F2F; }
         @media (max-width: 600px) {
             .table-container {padding: 5px;}
             th, td {font-size: 0.91rem;}
@@ -124,15 +141,50 @@
             $response = @file_get_contents($serverURL);
             if ($response !== false && is_numeric(trim($response))) {
                 $onlineCount = intval($response);
-                echo "<tr><td>$serverName</td><td class='online'>Online $onlineCount people</td></tr>";
                 $totalOnlineCount += $onlineCount;
+
+                // Color logic
+                if ($onlineCount > 400) {
+                    $statusClass = "online-danger";
+                    $dotClass = "dot-red";
+                    $label = "High Load";
+                } elseif ($onlineCount > 300) {
+                    $statusClass = "online-warning";
+                    $dotClass = "dot-yellow";
+                    $label = "Busy";
+                } else {
+                    $statusClass = "online";
+                    $dotClass = "dot-green";
+                    $label = "Normal";
+                }
+
+                echo "<tr>
+                        <td>$serverName</td>
+                        <td class='$statusClass'>
+                            <span class='status-dot $dotClass'></span>
+                            Online $onlineCount people
+                            <span class='badge rounded-pill ms-2 $statusClass' style='background: transparent; border: 1px solid #ececec; font-size: 0.85em;'>$label</span>
+                        </td>
+                      </tr>";
             } else {
-                echo "<tr><td>$serverName</td><td class='offline'>Unable to connect</td></tr>";
+                echo "<tr><td>$serverName</td><td class='offline'><span class='status-dot dot-red'></span>Unable to connect</td></tr>";
             }
         }
 
+        // Total users color
+        if ($totalOnlineCount > 400 * count($servers)) {
+            $totalClass = "online-danger";
+            $dotClass = "dot-red";
+        } elseif ($totalOnlineCount > 300 * count($servers)) {
+            $totalClass = "online-warning";
+            $dotClass = "dot-yellow";
+        } else {
+            $totalClass = "online";
+            $dotClass = "dot-green";
+        }
+
         echo '</table>';
-        echo "<div class='total-users'>Total online users: <span class='online'>$totalOnlineCount</span> people</div>";
+        echo "<div class='total-users'>Total online users: <span class='$totalClass'><span class='status-dot $dotClass'></span>$totalOnlineCount</span> people</div>";
     ?>
     </div>
     <!-- Bootstrap 5 JS -->
