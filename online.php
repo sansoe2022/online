@@ -114,13 +114,13 @@
     <div class="table-container">
     <?php
         // Allow iframe embedding if you want to show in iframe (optional)
-        // header('X-Frame-Options: ALLOWALL');
-        // header("Content-Security-Policy: frame-ancestors *");
+         header('X-Frame-Options: ALLOWALL');
+         header("Content-Security-Policy: frame-ancestors *");
 
         $servers = [
             '🇹🇭 FREE 1' => 'http://tmvh.co.free1.sksfree.shop:81/server/online',
             '🇹🇭 FREE 2' => 'http://tmvh.co.free6.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 3' => 'http://tmvh.co.free1new.sksfree.shop:81/server/online',
+            '🇹🇭 FREE 3' => 'http://tmvh.co.newfree7.sksfree.shop:81/server/online',
             '🇹🇭 FREE 4' => 'http://tmvh.co.free4.sksfree.shop:81/server/online',
             '🇹🇭 FREE 5' => 'http://tmvh.co.free5.sksfree.shop:81/server/online',
             '🇹🇭 FREE 6' => 'http://tmvh.co.free2.sksfree.shop:81/server/online',
