@@ -113,9 +113,9 @@
     <h3 class="mt-4 text-center">SVPN Server Status</h3>
     <div class="table-container">
     <?php
-        // Allow iframe embedding if you want to show in iframe (optional)
-         header('X-Frame-Options: ALLOWALL');
-         header("Content-Security-Policy: frame-ancestors *");
+        
+// CSP header (allow all domains)
+header("Content-Security-Policy: frame-ancestors *;");
 
         $servers = [
             '🇹🇭 FREE 1' => 'http://tmvh.co.free1.sksfree.shop:81/server/online',
