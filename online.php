@@ -129,6 +129,8 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 FREE 9' => 'http://tmvh.co.free9.sksfree.shop:81/server/online',
             '🇹🇭 FREE 10' => 'http://tmvh.co.free10.sksfree.shop:81/server/online',
             '🇹🇭 FREE 11' => 'http://tmvh.co.free11.sksfree.shop:81/server/online',
+            '🇹🇭 FREE 12' => 'http://tmvh.co.free12.sksfree.shop:81/server/online',
+            '🇹🇭 FREE 13' => 'http://tmvh.co.free13.sksfree.shop:81/server/online',
         ];
 
         $totalOnlineCount = 0;
