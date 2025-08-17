@@ -58,6 +58,7 @@
         .total-users {
             text-align: center;
             margin-top: 16px;
+            margin-bottom: 20px;
             font-weight: bold;
             font-size: 1.1rem;
         }
@@ -92,17 +93,17 @@
             <div class="collapse navbar-collapse" id="svpnNavbar">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/guidesim.html">
+                        <a class="nav-link" href="https://pntvpn.netlify.app/guidesim">
                             <i class="bi bi-journal-code me-1"></i> VPN နဲ့ ချိတ်သုံးဖို့ လမ်းညွှန်
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/extendsim.html">
+                        <a class="nav-link" href="https://pntvpn.netlify.app/extendsim">
                             <i class="bi bi-phone me-1"></i> ဆင်းမ်ကဒ် သက်တမ်းတိုးနည်း
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://sansoe2022.github.io/SVPN/">
+                        <a class="nav-link" href="https://pntvpn.netlify.app/">
                             <i class="bi bi-house-door me-1"></i> Home
                         </a>
                     </li>
