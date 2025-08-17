@@ -84,7 +84,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/pnt_icon510.png" alt="SVPN Logo" style="width:36px; height:auto;">
-                SVPN
+                PNT VPN
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#svpnNavbar" aria-controls="svpnNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </nav>
-    <h3 class="mt-4 text-center">SVPN Server Status</h3>
+    <h3 class="mt-4 text-center">PNT VPN Server Status</h3>
     <div class="table-container">
     <?php
         
