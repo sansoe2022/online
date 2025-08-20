@@ -119,14 +119,17 @@
 header("Content-Security-Policy: frame-ancestors *;");
 
         $servers = [
+            '🇹🇭 New 1' => 'http://new1.sksfree.shop:81/server/online',
+            '🇹🇭 New 2' => 'http://new2.sksfree.shop:81/server/online',
+            '🇹🇭 New 3' => 'http://new3.sksfree.shop:81/server/online',
+            '🇹🇭 New 4' => 'http://new4.sksfree.shop:81/server/online',
+            '🇹🇭 New 5' => 'http://new5.sksfree.shop:81/server/online',
             '🇹🇭 FREE 1' => 'http://tmvh.co.free1new.sksfree.shop:81/server/online',
             '🇹🇭 FREE 2' => 'http://tmvh.co.free2new.sksfree.shop:81/server/online',
             '🇹🇭 FREE 3' => 'http://tmvh.co.newfree7.sksfree.shop:81/server/online',
             '🇹🇭 FREE 4' => 'http://tmvh.co.new4free.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 5' => 'http://tmvh.co.new5free.sksfree.shop:81/server/online',
             '🇹🇭 FREE 6' => 'http://tmvh.co.free6.sksfree.shop:81/server/online',
             '🇹🇭 FREE 7' => 'http://tmvh.co.free5.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 8' => 'http://tmvh.co.free8.sksfree.shop:81/server/online',
             '🇹🇭 FREE 9' => 'http://tmvh.co.free9.sksfree.shop:81/server/online',
             '🇹🇭 FREE 10' => 'http://tmvh.co.free10.sksfree.shop:81/server/online',
             '🇹🇭 FREE 11' => 'http://tmvh.co.free11.sksfree.shop:81/server/online',
