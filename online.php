@@ -131,7 +131,6 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 FREE 5' => 'http://tmvh.co.new5free.sksfree.shop:81/server/online',
             '🇹🇭 FREE 6' => 'http://tmvh.co.free6.sksfree.shop:81/server/online',
             '🇹🇭 FREE 7' => 'http://tmvh.co.free5.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 8' => 'http://tmvh.co.free8.sksfree.shop:81/server/online',
             '🇹🇭 FREE 9' => 'http://tmvh.co.free9.sksfree.shop:81/server/online',
             '🇹🇭 FREE 10' => 'http://tmvh.co.free10.sksfree.shop:81/server/online',
             '🇹🇭 FREE 11' => 'http://tmvh.co.free11.sksfree.shop:81/server/online',
