@@ -129,13 +129,13 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 New 8' => 'http://new8.sksfree.shop:8888/server/online',
             '🇹🇭 New 9' => 'http://new9.sksfree.shop:81/server/online',
             '🇹🇭 New 10' => 'http://new10.sksfree.shop:8888/server/online',
-
+            '🇹🇭 FREE 11' => 'http://new11.sksfree.shop:81/server/online',
+            '🇹🇭 FREE 12' => 'http://new12.sksfree.shop:81/server/online',
+            '🇹🇭 FREE 13' => 'http://new13.sksfree.shop:81/server/online',
             '🇹🇭 FREE 3' => 'http://tmvh.co.newfree7.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 9' => 'http://tmvh.co.free9.sksfree.shop:81/server/online',
             '🇹🇭 FREE 10' => 'http://tmvh.co.free10.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 11' => 'http://tmvh.co.free11.sksfree.shop:81/server/online',
             '🇹🇭 FREE 12' => 'http://tmvh.co.free12.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 13' => 'http://tmvh.co.free13.sksfree.shop:81/server/online',
+        
         ];
 
         $totalOnlineCount = 0;
