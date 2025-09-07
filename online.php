@@ -132,7 +132,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 New 11' => 'http://new11.sksfree.shop:81/server/online',
             '🇹🇭 New 12' => 'http://new12.sksfree.shop:81/server/online',
             '🇹🇭 New 13' => 'http://new13.sksfree.shop:81/server/online',
-            '🇹🇭 FREE 3' => 'http://tmvh.co.newfree7.sksfree.shop:81/server/online',
+            
             '🇹🇭 FREE 10' => 'http://tmvh.co.free10.sksfree.shop:81/server/online',
             '🇹🇭 FREE 12' => 'http://tmvh.co.free12.sksfree.shop:81/server/online',
         
