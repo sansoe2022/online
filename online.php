@@ -134,6 +134,10 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 New 13' => 'http://new13.sksfree.shop:81/server/online',
             '🇹🇭 New 14' => 'http://new14.sksfree.shop:81/server/online',
             '🇹🇭 New 15' => 'http://new15.sksfree.shop:81/server/online',
+            '🇹🇭 New 16' => 'http://new16.sksfree.shop:81/server/online',
+            '🇹🇭 New 17' => 'http://new17.sksfree.shop:81/server/online',
+            '🇹🇭 New 18' => 'http://new18.sksfree.shop:81/server/online',
+
 
         
         ];
@@ -153,11 +157,11 @@ header("Content-Security-Policy: frame-ancestors *;");
                 $totalOnlineCount += $onlineCount;
 
                 // Color logic
-                if ($onlineCount > 400) {
+                if ($onlineCount > 300) {
                     $statusClass = "online-danger";
                     $dotClass = "dot-red";
                     $label = "High Load";
-                } elseif ($onlineCount > 300) {
+                } elseif ($onlineCount > 200) {
                     $statusClass = "online-warning";
                     $dotClass = "dot-yellow";
                     $label = "Busy";
