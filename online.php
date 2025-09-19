@@ -119,10 +119,10 @@
 header("Content-Security-Policy: frame-ancestors *;");
 
         $servers = [
-            '🇹🇭 New 1' => 'http://new1.sksfree.shop:81/server/online',
+            '🇹🇭 New 1' => 'http://free1sep.sksfree.shop:81/server/online',
             '🇹🇭 New 2' => 'http://new2.sksfree.shop:81/server/online',
-            '🇹🇭 New 3' => 'http://new3.sksfree.shop:81/server/online',
-            '🇹🇭 New 4' => 'http://new4.sksfree.shop:81/server/online',
+            '🇹🇭 New 3' => 'http://free3sep.sksfree.shop:81/server/online',
+            '🇹🇭 New 4' => 'http://free4sep.sksfree.shop:81/server/online',
             '🇹🇭 New 5' => 'http://new5.sksfree.shop:81/server/online',
             '🇹🇭 New 6' => 'http://new6.sksfree.shop:81/server/online',
             '🇹🇭 New 7' => 'http://new7.sksfree.shop:81/server/online',
