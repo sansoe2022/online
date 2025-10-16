@@ -139,7 +139,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 15' => 'http://free15sep.sksfree.shop:81/server/online',
             '🇹🇭 Free 16' => 'http://new16.sksfree.shop:81/server/online',
             '🇹🇭 Free 17' => 'http://new17.sksfree.shop:81/server/online',
-            '🇹🇭 Free 17' => 'http://new18.sksfree.shop:81/server/online',
+            '🇹🇭 Free 18' => 'http://new18.sksfree.shop:81/server/online',
             
 
 
