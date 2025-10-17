@@ -119,9 +119,7 @@
 header("Content-Security-Policy: frame-ancestors *;");
 
         $servers = [
-            '🇸🇬 SG 1' => 'http://sg1.sksfree.shop:81/server/online',
-            '🇳🇪 IN 1' => 'http://in1.sksfree.shop:81/server/online',
-            '🇺🇲 US 1' => 'http://us1.sksfree.shop:81/server/online',
+            
             '🇹🇭 Free 1' => 'http://free1.sksfree.shop:81/server/online',
             '🇹🇭 Free 2' => 'http://free2.sksfree.shop:81/server/online',
             '🇹🇭 Free 3' => 'http://free3.sksfree.shop:81/server/online',
@@ -139,7 +137,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 15' => 'http://free15sep.sksfree.shop:81/server/online',
             '🇹🇭 Free 16' => 'http://new16.sksfree.shop:81/server/online',
             '🇹🇭 Free 17' => 'http://new17.sksfree.shop:81/server/online',
-            '🇹🇭 Free 18' => 'http://new18.sksfree.shop:81/server/online',
+            
             
 
 
