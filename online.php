@@ -119,7 +119,9 @@
 header("Content-Security-Policy: frame-ancestors *;");
 
         $servers = [
-            
+            '🇺🇲 US 1' => 'http://us1.sksvpn.shop:81/server/online',
+            '🇯🇵 JP 1' => 'http://jp1.sksvpn.shop:81/server/online',
+            '🇸🇬 SG 1' => 'http://sg1.sksvpn.shop:81/server/online',
             '🇹🇭 Free 1' => 'http://free1.sksfree.shop:81/server/online',
             '🇹🇭 Free 2' => 'http://free2.sksfree.shop:81/server/online',
             '🇹🇭 Free 3' => 'http://free3.sksfree.shop:81/server/online',
@@ -135,8 +137,6 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 13' => 'http://free13sep.sksfree.shop:81/server/online',
             '🇹🇭 Free 14' => 'http://free14sep.sksfree.shop:81/server/online',
             '🇹🇭 Free 15' => 'http://free15sep.sksfree.shop:81/server/online',
-            '🇹🇭 Free 16' => 'http://new16.sksfree.shop:81/server/online',
-            '🇹🇭 Free 17' => 'http://new17.sksfree.shop:81/server/online',
             
             
 
