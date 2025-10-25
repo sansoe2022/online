@@ -137,7 +137,16 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 13' => 'http://free13oct.sksvpn.shop:81/server/online',
             '🇹🇭 Free 14' => 'http://free14oct.sksvpn.shop:81/server/online',
             '🇹🇭 Free 15' => 'http://free15oct.sksvpn.shop:81/server/online',
-            
+            '🇹🇭 Free 6' => 'http://free6.sksvpn.shop/udpserver/online',
+            '🇹🇭 Free 7' => 'http://free7.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 8' => 'http://free8.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 9' => 'http://free9.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 10' => 'http://free10.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 11' => 'http://free11oct.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 12' => 'http://free12oct.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 13' => 'http://free13oct.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 14' => 'http://free14oct.sksvpn.shop:81/udpserver/online',
+            '🇹🇭 Free 15' => 'http://free15oct.sksvpn.shop:81/udpserver/online',
             
 
 
