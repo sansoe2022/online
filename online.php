@@ -202,14 +202,38 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // PHP array ကို JavaScript Object အဖြစ် ပြောင်းထားပါတယ်
         const servers = {
-            '🇺🇲 US 1': ['http://us1.sksvpn.shop:81/server/online'],
-            '🇯🇵 JP 1': ['http://jp1.sksvpn.shop:81/server/online'],
-            '🇸🇬 SG 1': ['http://sg1.sksvpn.shop:81/server/online'],
-            '🇹🇭 Free 1': ['http://free1.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 2': ['http://free2.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 3': ['http://free3.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 4': ['http://free4.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 5': ['http://free5.sksfree.shop:81/server/online'],
+            '🇺🇲 US 1': [
+                'http://us1.sksvpn.shop:81/server/online',
+                'http://us1.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇯🇵 JP 1': [
+                'http://jp1.sksvpn.shop:81/server/online',
+                'http://jp1.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇸🇬 SG 1': [
+                'http://sg1.sksvpn.shop:81/server/online',
+                'http://sg1.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 1': [
+                'http://free1.sksfree.shop:81/server/online',
+                'http://free1.sksfree.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 2': [
+                'http://free2.sksfree.shop:81/server/online',
+                'http://free2.sksfree.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 3': [
+                'http://free3.sksfree.shop:81/server/online',
+                'http://free3.sksfree.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 4': [
+                'http://free4.sksfree.shop:81/server/online',
+                'http://free4.sksfree.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 5': [
+                'http://free5.sksfree.shop:81/server/online',
+                'http://free5.sksfree.shop:81/udpserver/online'
+            ],
             '🇹🇭 Free 6': [
                 'http://free6.sksvpn.shop:81/server/online',
                 'http://free6.sksvpn.shop/udpserver/online'
