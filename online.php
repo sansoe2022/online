@@ -1,8 +1,72 @@
-Ok ครับ นี่คือ code ฉบับสมบูรณ์ที่แก้ไขตามที่คุณต้องการครับ
-การเปลี่ยนแปลงที่สำคัญคือ ผมได้ปรับโครงสร้างของ array $servers ใหม่ครับ
-แทนที่จะใส่ชื่อ server ที่ซ้ำกัน (ซึ่งจะทำให้ PHP เขียนทับค่าเก่าไป) ผมได้จัดกลุ่ม URL ทั้งหมดที่อยู่ภายใต้ชื่อ server เดียวกัน ให้อยู่ใน array เดียวกัน (เช่น '🇹🇭 Free 6' => [ url1, url2 ])
-จากนั้น code จะวน loop ไปดึงข้อมูลจาก URL ทั้งสอง (หรือมากกว่า) ของ server ชื่อนั้นๆ แล้วนำค่า online ที่ได้ทั้งหมดมาบวกกัน ก่อนที่จะแสดงผลลัพธ์เป็นแถวเดียวครับ
-Complete Code (HTML + PHP المعدل)
+<?php
+// --- အပိုင်း ၁: PHP Proxy ---
+// JavaScript က 'fetch_url' ဆိုတဲ့ parameter နဲ့ ဒီ file ကို ပြန်ခေါ်တဲ့အခါ အလုပ်လုပ်ပါမယ်။
+if (isset($_GET['fetch_url'])) {
+    
+    // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
+    $allowed_domains = [
+        'us1.sksvpn.shop',
+        'jp1.sksvpn.shop',
+        'sg1.sksvpn.shop',
+        'free1.sksfree.shop',
+        'free2.sksfree.shop',
+        'free3.sksfree.shop',
+        'free4.sksfree.shop',
+        'free5.sksfree.shop',
+        'free6.sksvpn.shop',
+        'free7.sksvpn.shop',
+        'free8.sksvpn.shop',
+        'free9.sksvpn.shop',
+        'free10.sksvpn.shop',
+        'free11oct.sksvpn.shop',
+        'free12oct.sksvpn.shop',
+        'free13oct.sksvpn.shop',
+        'free14oct.sksvpn.shop',
+        'free15oct.sksvpn.shop'
+    ];
+    
+    $url_to_fetch = $_GET['fetch_url'];
+    $domain = parse_url($url_to_fetch, PHP_URL_HOST);
+
+    // Domain စစ်ဆေးခြင်း
+    if (in_array($domain, $allowed_domains)) {
+        
+        // 5 စက္ကန့်ထက်ကြာရင် timeout ဖြစ်အောင် သတ်မှတ်ပါ
+        $context = stream_context_create([
+            'http' => [
+                'timeout' => 5,  // 5 seconds
+                'ignore_errors' => true // error တွေရလည်း ဆက်လုပ်မယ်
+            ]
+        ]);
+        
+        $response = @file_get_contents($url_to_fetch, false, $context);
+        
+        if ($response !== false && is_numeric(trim($response))) {
+            // အောင်မြင်ရင် JSON format နဲ့ data ပြန်ပို့မယ်
+            header('Content-Type: application/json');
+            echo json_encode(['status' => 'success', 'online' => intval(trim($response))]);
+        } else {
+            // မအောင်မြင်ရင် error JSON ပြန်ပို့မယ်
+            header('Content-Type: application/json');
+            echo json_encode(['status' => 'error']);
+        }
+        
+    } else {
+        // ခွင့်မပြုတဲ့ domain ဆိုရင်
+        header('Content-Type: application/json');
+        echo json_encode(['status' => 'error', 'message' => 'Domain not allowed']);
+    }
+    
+    // HTML ပိုင်းကို ဆက်မ run စေတော့ဘဲ ဒီမှာတင် ရပ်လိုက်မယ်
+    exit;
+}
+
+// --- အပိုင်း ၂: HTML + JavaScript Page ---
+// ပုံမှန် page load (အပေါ်က 'fetch_url' parameter မပါရင် ဒီကို ရောက်လာမယ်)
+
+// CSP header (allow all domains)
+header("Content-Security-Policy: frame-ancestors *;");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,22 +106,18 @@ Complete Code (HTML + PHP المعدل)
             border: 1px solid #ececec;
             padding: 10px;
             text-align: left;
+            /* JS နဲ့ ထည့်တဲ့အခါ style ပျက်မသွားအောင် Caching လုပ်ထားတာပါ */
+            min-height: 50px; 
         }
         th {
             background-color: #f2f2f2;
         }
-        .online {
-            color: #00C853; font-weight: bold;
-        }
-        .online-warning {
-            color: #FFD600; font-weight: bold; /* Yellow */
-        }
-        .online-danger {
-            color: #D32F2F; font-weight: bold; /* Red */
-        }
-        .offline {
-            color: #d32f2f; font-weight: bold;
-        }
+        .online { color: #00C853; font-weight: bold; }
+        .online-warning { color: #FFD600; font-weight: bold; }
+        .online-danger { color: #D32F2F; font-weight: bold; }
+        .offline { color: #d32f2f; font-weight: bold; }
+        .loading { color: #888888; font-style: italic; } /* Loading status အတွက် style အသစ် */
+        
         .total-users {
             text-align: center;
             margin-top: 16px;
@@ -76,6 +136,8 @@ Complete Code (HTML + PHP المعدل)
         .dot-green { background: #00C853; }
         .dot-yellow { background: #FFD600; }
         .dot-red { background: #D32F2F; }
+        .dot-grey { background: #888888; } /* Loading status အတွက် dot */
+
         @media (max-width: 600px) {
             .table-container {padding: 5px;}
             th, td {font-size: 0.91rem;}
@@ -113,145 +175,194 @@ Complete Code (HTML + PHP المعدل)
             </div>
         </div>
     </nav>
+    
     <h3 class="mt-4 text-center">PNT VPN Server Status</h3>
+    
     <div class="table-container">
-    <?php
+        <table>
+            <thead>
+                <tr>
+                    <th>Server Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="server-list-body">
+                </tbody>
+        </table>
         
-        // CSP header (allow all domains)
-        header("Content-Security-Policy: frame-ancestors *;");
-
-        // --- นี่คือส่วนที่แก้ไข ---
-        // เราเปลี่ยนโครงสร้าง array ให้ server name เป็น key
-        // และ value เป็น array ของ URL ที่เกี่ยวข้อง
-        $servers = [
-            '🇺🇲 US 1' => ['http://us1.sksvpn.shop:81/server/online'],
-            '🇯🇵 JP 1' => ['http://jp1.sksvpn.shop:81/server/online'],
-            '🇸🇬 SG 1' => ['http://sg1.sksvpn.shop:81/server/online'],
-            '🇹🇭 Free 1' => ['http://free1.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 2' => ['http://free2.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 3' => ['http://free3.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 4' => ['http://free4.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 5' => ['http://free5.sksfree.shop:81/server/online'],
-            '🇹🇭 Free 6' => [
+        <div class='total-users'>Total online users: 
+            <span id="total-users-display" class="loading">
+                <span class='status-dot dot-grey'></span>Loading...
+            </span>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // PHP array ကို JavaScript Object အဖြစ် ပြောင်းထားပါတယ်
+        const servers = {
+            '🇺🇲 US 1': ['http://us1.sksvpn.shop:81/server/online'],
+            '🇯🇵 JP 1': ['http://jp1.sksvpn.shop:81/server/online'],
+            '🇸🇬 SG 1': ['http://sg1.sksvpn.shop:81/server/online'],
+            '🇹🇭 Free 1': ['http://free1.sksfree.shop:81/server/online'],
+            '🇹🇭 Free 2': ['http://free2.sksfree.shop:81/server/online'],
+            '🇹🇭 Free 3': ['http://free3.sksfree.shop:81/server/online'],
+            '🇹🇭 Free 4': ['http://free4.sksfree.shop:81/server/online'],
+            '🇹🇭 Free 5': ['http://free5.sksfree.shop:81/server/online'],
+            '🇹🇭 Free 6': [
                 'http://free6.sksvpn.shop:81/server/online',
                 'http://free6.sksvpn.shop/udpserver/online'
             ],
-            '🇹🇭 Free 7' => [
+            '🇹🇭 Free 7': [
                 'http://free7.sksvpn.shop:81/server/online',
                 'http://free7.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 8' => [
+            '🇹🇭 Free 8': [
                 'http://free8.sksvpn.shop:81/server/online',
                 'http://free8.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 9' => [
+            '🇹🇭 Free 9': [
                 'http://free9.sksvpn.shop:81/server/online',
                 'http://free9.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 10' => [
+            '🇹🇭 Free 10': [
                 'http://free10.sksvpn.shop:81/server/online',
                 'http://free10.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 11' => [
+            '🇹🇭 Free 11': [
                 'http://free11oct.sksvpn.shop:81/server/online',
                 'http://free11oct.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 12' => [
+            '🇹🇭 Free 12': [
                 'http://free12oct.sksvpn.shop:81/server/online',
                 'http://free12oct.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 13' => [
+            '🇹🇭 Free 13': [
                 'http://free13oct.sksvpn.shop:81/server/online',
                 'http://free13oct.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 14' => [
+            '🇹🇭 Free 14': [
                 'http://free14oct.sksvpn.shop:81/server/online',
                 'http://free14oct.sksvpn.shop:81/udpserver/online'
             ],
-            '🇹🇭 Free 15' => [
+            '🇹🇭 Free 15': [
                 'http://free15oct.sksvpn.shop:81/server/online',
                 'http://free15oct.sksvpn.shop:81/udpserver/online'
             ],
-        ];
+        };
 
-        $totalOnlineCount = 0;
+        // Total တွက်ဖို့ variable တွေ
+        let totalOnlineCount = 0;
+        let serversResponded = 0;
+        const serverGroupCount = Object.keys(servers).length;
 
-        echo '<table>';
-        echo '<tr>
-                <th>Server Name</th>
-                <th>Status</th>
-              </tr>';
+        // HTML element တွေကို ကြိုယူထားမယ်
+        const tbody = document.getElementById('server-list-body');
+        const totalDisplay = document.getElementById('total-users-display');
 
-        // วน loop ตามกลุ่ม server (server name)
-        foreach ($servers as $serverName => $urlList) {
-            
-            $groupOnlineCount = 0; // ตัวแปรสำหรับนับผลรวมของกลุ่มนี้
-            $groupConnectFailed = true; // ตั้งสมมติฐานว่าล้มเหลวไว้ก่อน
-            
-            // วน loop URL ภายในกลุ่ม
-            foreach ($urlList as $serverURL) {
-                $response = @file_get_contents($serverURL);
+        // Page load တာနဲ့ ဒီ function ကို run မယ်
+        document.addEventListener('DOMContentLoaded', () => {
+            // Server list ကို loop ပတ်မယ်
+            Object.entries(servers).forEach(([serverName, urlList]) => {
                 
-                if ($response !== false && is_numeric(trim($response))) {
-                    $groupOnlineCount += intval($response); // บวกค่า online ที่ได้
-                    $groupConnectFailed = false; // มีอย่างน้อย 1 URL ที่เชื่อมต่อสำเร็จ
+                // 1. "Loading..." placeholder row ကို အရင်ဖန်တီးမယ်
+                const row = tbody.insertRow();
+                const cellName = row.insertCell(0);
+                const cellStatus = row.insertCell(1);
+                
+                cellName.textContent = serverName;
+                cellStatus.innerHTML = `<span class="loading"><span class='status-dot dot-grey'></span>Loading...</span>`;
+
+                // 2. ဒီ server group အတွက် data ကို သွား fetch ခိုင်းမယ်
+                fetchServerGroupStatus(serverName, urlList, cellStatus);
+            });
+        });
+
+        // URL list တစ်ခုလုံး (server group) ရဲ့ status ကို fetch လုပ်မယ့် function
+        async function fetchServerGroupStatus(serverName, urlList, statusCell) {
+            let groupOnlineCount = 0;
+            let groupConnectFailed = true;
+
+            // URL list ထဲက link တွေကို တစ်ပြိုင်တည်း request ပို့မယ်
+            const requests = urlList.map(url => {
+                // ဒီ file ကိုယ်တိုင်ကို 'fetch_url' parameter နဲ့ ပြန်ခေါ်တာ (PHP proxy ကို ခေါ်တာပါ)
+                return fetch(`?fetch_url=${encodeURIComponent(url)}`)
+                    .then(response => response.json());
+            });
+
+            // request အားလုံး ပြီးဆုံးတာကို စောင့်မယ် (အောင်မြင်သည်ဖြစ်စေ၊ ကျရှုံးသည်ဖြစ်စေ)
+            const results = await Promise.allSettled(requests);
+
+            results.forEach(result => {
+                if (result.status === 'fulfilled' && result.value.status === 'success') {
+                    groupOnlineCount += result.value.online;
+                    groupConnectFailed = false; // တစ်ခုမအောင်မြင်ရင်တောင် online ပြမယ်
                 }
-            }
+            });
 
-            // หลังจากวน loop URL ในกลุ่มครบแล้ว ให้แสดงผล
-            if (!$groupConnectFailed) {
-                // $groupOnlineCount คือผลรวมของ server ชื่อนี้
-                $totalOnlineCount += $groupOnlineCount; // เพิ่มเข้ายอดรวมทั้งหมด
-
-                // Color logic (ใช้ $groupOnlineCount)
-                if ($groupOnlineCount > 300) {
-                    $statusClass = "online-danger";
-                    $dotClass = "dot-red";
-                    $label = "High Load";
-                } elseif ($groupOnlineCount > 200) {
-                    $statusClass = "online-warning";
-                    $dotClass = "dot-yellow";
-                    $label = "Busy";
+            // 3. ရလာတဲ့ data နဲ့ status cell ကို update လုပ်မယ်
+            if (!groupConnectFailed) {
+                // Color logic
+                let statusClass, dotClass, label;
+                if (groupOnlineCount > 300) {
+                    statusClass = "online-danger";
+                    dotClass = "dot-red";
+                    label = "High Load";
+                } else if (groupOnlineCount > 200) {
+                    statusClass = "online-warning";
+                    dotClass = "dot-yellow";
+                    label = "Busy";
                 } else {
-                    $statusClass = "online";
-                    $dotClass = "dot-green";
-                    $label = "Normal";
+                    statusClass = "online";
+                    dotClass = "dot-green";
+                    label = "Normal";
                 }
 
-                echo "<tr>
-                        <td>$serverName</td>
-                        <td class='$statusClass'>
-                            <span class='status-dot $dotClass'></span>
-                            Online $groupOnlineCount people
-                            <span class='badge rounded-pill ms-2 $statusClass' style='background: transparent; border: 1px solid #ececec; font-size: 0.85em;'>$label</span>
-                        </td>
-                      </tr>";
+                statusCell.className = statusClass;
+                statusCell.innerHTML = `
+                    <span class='status-dot ${dotClass}'></span>
+                    Online ${groupOnlineCount} people
+                    <span class='badge rounded-pill ms-2 ${statusClass}' style='background: transparent; border: 1px solid #ececec; font-size: 0.85em;'>${label}</span>
+                `;
+                
+                // Total ကို update လုပ်မယ်
+                totalOnlineCount += groupOnlineCount;
+
             } else {
-                // ถ้า URL ทั้งหมดในกลุ่มนี้ล้มเหลว
-                echo "<tr><td>$serverName</td><td class='offline'><span class='status-dot dot-red'></span>Unable to connect</td></tr>";
+                // လုံးဝမရရင် offline ပြမယ်
+                statusCell.className = 'offline';
+                statusCell.innerHTML = `<span class='status-dot dot-red'></span>Unable to connect`;
+            }
+
+            // 4. Total display ကို update လုပ်ဖို့ server တိုင်းက ပြန်ဖြေပြီးပြီလား စစ်မယ်
+            serversResponded++;
+            if (serversResponded === serverGroupCount) {
+                // server အားလုံး response ပြန်ပြီဆိုမှ total ကို နောက်ဆုံး update လုပ်မယ်
+                updateTotalDisplay();
             }
         }
-
-        // Total users color
-        // เราจะนับจำนวน "กลุ่ม" server ไม่ใช่จำนวน URL ทั้งหมด
-        $serverGroupCount = count($servers); 
         
-        if ($totalOnlineCount > 400 * $serverGroupCount) { // ปรับ logic การคำนวณตามจำนวนกลุ่ม
-            $totalClass = "online-danger";
-            $dotClass = "dot-red";
-        } elseif ($totalOnlineCount > 300 * $serverGroupCount) { // ปรับ logic
-            $totalClass = "online-warning";
-            $dotClass = "dot-yellow";
-        } else {
-            $totalClass = "online";
-            $dotClass = "dot-green";
+        // Total online display ကို update လုပ်မယ့် function
+        function updateTotalDisplay() {
+            let totalClass, dotClass;
+            
+            if (totalOnlineCount > 400 * serverGroupCount) {
+                totalClass = "online-danger";
+                dotClass = "dot-red";
+            } else if (totalOnlineCount > 300 * serverGroupCount) {
+                totalClass = "online-warning";
+                dotClass = "dot-yellow";
+            } else {
+                totalClass = "online";
+                dotClass = "dot-green";
+            }
+
+            totalDisplay.className = totalClass;
+            totalDisplay.innerHTML = `<span class='status-dot ${dotClass}'></span>${totalOnlineCount}</span> people`;
         }
 
-        echo '</table>';
-        echo "<div class='total-users'>Total online users: <span class='$totalClass'><span class='status-dot $dotClass'></span>$totalOnlineCount</span> people</div>";
-    ?>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </script>
+
 </body>
 </html>
-
