@@ -85,7 +85,8 @@ header("Content-Security-Policy: frame-ancestors *;");
             --border-color-light: #ececec;
             --th-bg-light: #f2f2f2;
             
-            --color-green-light: #006400;  /* Deep Green */
+            /* === [ပြင်ဆင်မှု ၁] Green Color ကို #006400 အစား #198754 (Bootstrap Green) သို့ ပြောင်းထားပါသည် === */
+            --color-green-light: #198754;  /* Deep but clear Green */
             --color-yellow-light: #FFA000; /* Deep Yellow (Amber) */
             --color-red-light: #B71C1C;    /* Deep Red */
             --color-grey-light: #888888;
@@ -132,6 +133,15 @@ header("Content-Security-Policy: frame-ancestors *;");
         body.dark-mode .navbar .navbar-brand {
             color: var(--text-color-dark) !important;
         }
+
+        /* === [ပြင်ဆင်မှု ၂] Dark Mode Toggler Button အတွက် CSS === */
+        body.dark-mode .navbar-toggler {
+            border-color: var(--border-color-dark);
+        }
+        body.dark-mode .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        /* ==================================================== */
         
         .theme-switch-wrapper {
             display: flex;
@@ -265,7 +275,7 @@ header("Content-Security-Policy: frame-ancestors *;");
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/pnt_icon510.png" alt="SVPN Logo" style="width:36px; height:auto;">
@@ -403,6 +413,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 15': [
                 'http://free15oct.sksvpn.shop:81/server/online',
                 'http://free15oct.sksvpn.shop:81/udpserver/online'
+Example
             ],
         };
 
@@ -447,7 +458,7 @@ header("Content-Security-Policy: frame-ancestors *;");
 
         // --- Data Fetching Logic ---
 
-        // Main function (ဒါကို 10 စက္ကန့်တစ်ခါ ခေါ်မယ်)
+        // Main function (ဒါကို 30 စက္ကန့်တစ်ခါ ခေါ်မယ်)
         function fetchAllServerStatuses() {
             // Reset counters and table
             totalOnlineCount = 0;
@@ -517,6 +528,7 @@ header("Content-Security-Policy: frame-ancestors *;");
                 }
 
                 statusCell.className = statusClass;
+                // dark mode မှာ border အရောင်မတူလို့ CSS variable ကို သုံးထားပါတယ်
                 statusCell.innerHTML = `
                     <span class='status-dot ${dotClass}'></span>
                     Online ${groupOnlineCount} people
@@ -561,8 +573,8 @@ header("Content-Security-Policy: frame-ancestors *;");
             // Page load တာနဲ့ တစ်ခါတည်း အရင် run မယ်
             fetchAllServerStatuses(); 
             
-            // 10 စက္ကန့် (10000 ms) တစ်ခါ ထပ် run မယ်
-            setInterval(fetchAllServerStatuses, 10000); 
+            // === [ပြင်ဆင်မှု ၃] 10000ms မှ 30000ms (30 စက္ကန့်) သို့ ပြောင်းထားပါသည် ===
+            setInterval(fetchAllServerStatuses, 30000); 
         });
 
     </script>
