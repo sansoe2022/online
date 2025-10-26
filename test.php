@@ -413,7 +413,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 15': [
                 'http://free15oct.sksvpn.shop:81/server/online',
                 'http://free15oct.sksvpn.shop:81/udpserver/online'
-Example
+
             ],
         };
 
