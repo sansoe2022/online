@@ -5,9 +5,6 @@ if (isset($_GET['fetch_url'])) {
     
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
-        'us1.sksvpn.shop',
-        'jp1.sksvpn.shop',
-        'sg1.sksvpn.shop',
         'free1.sksfree.shop',
         'free2.sksfree.shop',
         'free3.sksfree.shop',
@@ -22,7 +19,13 @@ if (isset($_GET['fetch_url'])) {
         'free12oct.sksvpn.shop',
         'free13oct.sksvpn.shop',
         'free14oct.sksvpn.shop',
-        'free15oct.sksvpn.shop'
+        'free15oct.sksvpn.shop',
+        'free16.sksvpn.shop',
+        'free17.sksvpn.shop',
+        'free18.sksvpn.shop',
+        'free19.sksvpn.shop',
+        'free20.sksvpn.shop'
+        
     ];
     
     $url_to_fetch = $_GET['fetch_url'];
@@ -402,6 +405,27 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 15': [
                 'http://free15oct.sksvpn.shop:81/server/online',
                 'http://free15oct.sksvpn.shop:81/udpserver/online'
+
+            ],
+            '🇹🇭 Free 16': [
+                'http://free16.sksvpn.shop:81/server/online',
+                'http://free16.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 17': [
+                'http://free17.sksvpn.shop:81/server/online',
+                'http://free17.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 18': [
+                'http://free18.sksvpn.shop:81/server/online',
+                'http://free18.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 19': [
+                'http://free19.sksvpn.shop:81/server/online',
+                'http://free19.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 20': [
+                'http://free20.sksvpn.shop:81/server/online',
+                'http://free20.sksvpn.shop:81/udpserver/online'
 
             ],
         };
