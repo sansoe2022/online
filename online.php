@@ -11,16 +11,16 @@ if (isset($_GET['fetch_url'])) {
         'free3nov.sksvpn.shop',
         'free4nov.sksvpn.shop',
         'free5nov.sksvpn.shop',
-        'free6.sksvpn.shop',
-        'free7.sksvpn.shop',
-        'free8.sksvpn.shop',
-        'free9.sksvpn.shop',
-        'free10.sksvpn.shop',
-        'free11oct.sksvpn.shop',
-        'free12oct.sksvpn.shop',
-        'free13oct.sksvpn.shop',
-        'free14oct.sksvpn.shop',
-        'free15oct.sksvpn.shop',
+        'free6nov.sksvpn.shop',
+        'free7nov.sksvpn.shop',
+        'free8nov.sksvpn.shop',
+        'free9nov.sksvpn.shop',
+        'free10nov.sksvpn.shop',
+        'free11nov.sksvpn.shop',
+        'free12nov.sksvpn.shop',
+        'free13nov.sksvpn.shop',
+        'free14nov.sksvpn.shop',
+        'free15nov.sksvpn.shop',
         'free16.sksvpn.shop',
         'free17.sksvpn.shop',
         'free18.sksvpn.shop',
@@ -371,44 +371,44 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://free5nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
-                'http://free6.sksvpn.shop:81/server/online',
-                'http://free6.sksvpn.shop/udpserver/online'
+                'http://free6nov.sksvpn.shop:81/server/online',
+                'http://free6nov.sksvpn.shop/udpserver/online'
             ],
             '🇹🇭 Free 7': [
-                'http://free7.sksvpn.shop:81/server/online',
-                'http://free7.sksvpn.shop:81/udpserver/online'
+                'http://free7nov.sksvpn.shop:81/server/online',
+                'http://free7nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 8': [
-                'http://free8.sksvpn.shop:81/server/online',
-                'http://free8.sksvpn.shop:81/udpserver/online'
+                'http://free8nov.sksvpn.shop:81/server/online',
+                'http://free8nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 9': [
-                'http://free9.sksvpn.shop:81/server/online',
-                'http://free9.sksvpn.shop:81/udpserver/online'
+                'http://free9nov.sksvpn.shop:81/server/online',
+                'http://free9nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 10': [
-                'http://free10.sksvpn.shop:81/server/online',
-                'http://free10.sksvpn.shop:81/udpserver/online'
+                'http://free10nov.sksvpn.shop:81/server/online',
+                'http://free10nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 11': [
-                'http://free11oct.sksvpn.shop:81/server/online',
-                'http://free11oct.sksvpn.shop:81/udpserver/online'
+                'http://free11nov.sksvpn.shop:81/server/online',
+                'http://free11nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 12': [
-                'http://free12oct.sksvpn.shop:81/server/online',
-                'http://free12oct.sksvpn.shop:81/udpserver/online'
+                'http://free12nov.sksvpn.shop:81/server/online',
+                'http://free12nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 13': [
-                'http://free13oct.sksvpn.shop:81/server/online',
-                'http://free13oct.sksvpn.shop:81/udpserver/online'
+                'http://free13nov.sksvpn.shop:81/server/online',
+                'http://free13nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 14': [
-                'http://free14oct.sksvpn.shop:81/server/online',
-                'http://free14oct.sksvpn.shop:81/udpserver/online'
+                'http://free14nov.sksvpn.shop:81/server/online',
+                'http://free14nov.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 15': [
-                'http://free15oct.sksvpn.shop:81/server/online',
-                'http://free15oct.sksvpn.shop:81/udpserver/online'
+                'http://free15nov.sksvpn.shop:81/server/online',
+                'http://free15nov.sksvpn.shop:81/udpserver/online'
 
             ],
             '🇹🇭 Free 16': [
