@@ -21,7 +21,7 @@ if (isset($_GET['fetch_url'])) {
         'free13nov.sksvpn.shop',
         'free14nov.sksvpn.shop',
         'free15nov.sksvpn.shop',
-        'freedec16.sksvpn.shop',
+        'free16dec.sksvpn.shop',
         'free17dec.sksvpn.shop',
         'free18dec.sksvpn.shop',
         'free19dec.sksvpn.shop',
@@ -412,24 +412,24 @@ header("Content-Security-Policy: frame-ancestors *;");
 
             ],
             '🇹🇭 Free 16': [
-                'http://free16.sksvpn.shop:81/server/online',
-                'http://free16.sksvpn.shop:81/udpserver/online'
+                'http://free16dec.sksvpn.shop:81/server/online',
+                'http://free16dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 17': [
-                'http://free17.sksvpn.shop:81/server/online',
-                'http://free17.sksvpn.shop:81/udpserver/online'
+                'http://free17dec.sksvpn.shop:81/server/online',
+                'http://free17dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 18': [
-                'http://free18.sksvpn.shop:81/server/online',
-                'http://free18.sksvpn.shop:81/udpserver/online'
+                'http://free18dec.sksvpn.shop:81/server/online',
+                'http://free18dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 19': [
-                'http://free19.sksvpn.shop:81/server/online',
-                'http://free19.sksvpn.shop:81/udpserver/online'
+                'http://free19dec.sksvpn.shop:81/server/online',
+                'http://free19dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 20': [
-                'http://free20.sksvpn.shop:81/server/online',
-                'http://free20.sksvpn.shop:81/udpserver/online'
+                'http://free20dec.sksvpn.shop:81/server/online',
+                'http://free20dec.sksvpn.shop:81/udpserver/online'
 
             ],
         };
