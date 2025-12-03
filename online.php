@@ -21,11 +21,11 @@ if (isset($_GET['fetch_url'])) {
         'free13nov.sksvpn.shop',
         'free14nov.sksvpn.shop',
         'free15nov.sksvpn.shop',
-        'free16.sksvpn.shop',
-        'free17.sksvpn.shop',
-        'free18.sksvpn.shop',
-        'free19.sksvpn.shop',
-        'free20.sksvpn.shop'
+        'freedec16.sksvpn.shop',
+        'free17dec.sksvpn.shop',
+        'free18dec.sksvpn.shop',
+        'free19dec.sksvpn.shop',
+        'free20dec.sksvpn.shop'
         
     ];
     
