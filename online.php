@@ -6,11 +6,11 @@ if (isset($_GET['fetch_url'])) {
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
         'jp1.sksvpn.shop',
-        'free1nov.sksvpn.shop',
-        'free2nov.sksvpn.shop',
-        'free3nov.sksvpn.shop',
-        'free4nov.sksvpn.shop',
-        'free5nov.sksvpn.shop',
+        'free1dec.sksvpn.shop',
+        'free2dec.sksvpn.shop',
+        'free3dec.sksvpn.shop',
+        'free4dec.sksvpn.shop',
+        'free5dec.sksvpn.shop',
         'free6nov.sksvpn.shop',
         'free7nov.sksvpn.shop',
         'free8nov.sksvpn.shop',
