@@ -351,24 +351,24 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://jp1.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 1': [
-                'http://free1nov.sksvpn.shop:81/server/online',
-                'http://free1nov.sksvpn.shop:81/udpserver/online'
+                'http://free1dec.sksvpn.shop:81/server/online',
+                'http://free1dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 2': [
-                'http://free2nov.sksvpn.shop:81/server/online',
-                'http://free2nov.sksvpn.shop:81/udpserver/online'
+                'http://free2dec.sksvpn.shop:81/server/online',
+                'http://free2dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 3': [
-                'http://free3nov.sksvpn.shop:81/server/online',
-                'http://free3nov.sksvpn.shop:81/udpserver/online'
+                'http://free3dec.sksvpn.shop:81/server/online',
+                'http://free3dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
-                'http://free4nov.sksvpn.shop:81/server/online',
-                'http://free4nov.sksvpn.shop:81/udpserver/online'
+                'http://free4dec.sksvpn.shop:81/server/online',
+                'http://free4dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 5': [
-                'http://free5nov.sksvpn.shop:81/server/online',
-                'http://free5nov.sksvpn.shop:81/udpserver/online'
+                'http://free5dec.sksvpn.shop:81/server/online',
+                'http://free5dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
                 'http://free6nov.sksvpn.shop:81/server/online',
