@@ -408,12 +408,12 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://free13dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 14': [
-                'http://free14nov.sksvpn.shop:81/server/online',
-                'http://free14nov.sksvpn.shop:81/udpserver/online'
+                'http://free14dec.sksvpn.shop:81/server/online',
+                'http://free14dec.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 15': [
-                'http://free15nov.sksvpn.shop:81/server/online',
-                'http://free15nov.sksvpn.shop:81/udpserver/online'
+                'http://free15dec.sksvpn.shop:81/server/online',
+                'http://free15dec.sksvpn.shop:81/udpserver/online'
 
             ],
             '🇹🇭 Free 16': [
