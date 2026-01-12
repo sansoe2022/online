@@ -6,12 +6,12 @@ if (isset($_GET['fetch_url'])) {
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
         'jp1.sksvpn.shop',
-        'us1.sksvpn.shop',
-        'free1dec.sksvpn.shop',
-        'free2dec.sksvpn.shop',
-        'free3dec.sksvpn.shop',
-        'free4dec.sksvpn.shop',
-        'free5dec.sksvpn.shop',
+        'us.sksvpn.shop',
+        'free1jan.sksvpn.shop',
+        'free2jan.sksvpn.shop',
+        'free3jan.sksvpn.shop',
+        'free4jan.sksvpn.shop',
+        'free5jan.sksvpn.shop',
         'free6dec.sksvpn.shop',
         'free7dec.sksvpn.shop',
         'free8dec.sksvpn.shop',
@@ -356,25 +356,29 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://jp1.sksvpn.shop:81/server/online',
                 'http://jp1.sksvpn.shop:81/udpserver/online'
             ],
+            '🇲🇾 US 1': [
+                'http://us.sksvpn.shop:81/server/online',
+                'http://us.sksvpn.shop:81/udpserver/online'
+            ],
             '🇹🇭 Free 1': [
-                'http://free1dec.sksvpn.shop:81/server/online',
-                'http://free1dec.sksvpn.shop:81/udpserver/online'
+                'http://free1jan.sksvpn.shop:81/server/online',
+                'http://free1jan.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 2': [
-                'http://free2dec.sksvpn.shop:81/server/online',
-                'http://free2dec.sksvpn.shop:81/udpserver/online'
+                'http://free2jan.sksvpn.shop:81/server/online',
+                'http://free2jan.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 3': [
-                'http://free3dec.sksvpn.shop:81/server/online',
-                'http://free3dec.sksvpn.shop:81/udpserver/online'
+                'http://free3ja..sksvpn.shop:81/server/online',
+                'http://free3jan.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
-                'http://free4dec.sksvpn.shop:81/server/online',
-                'http://free4dec.sksvpn.shop:81/udpserver/online'
+                'http://free4jan.sksvpn.shop:81/server/online',
+                'http://free4jan.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 5': [
-                'http://free5dec.sksvpn.shop:81/server/online',
-                'http://free5dec.sksvpn.shop:81/udpserver/online'
+                'http://free5jan.sksvpn.shop:81/server/online',
+                'http://free5jan.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
                 'http://free6dec.sksvpn.shop:81/server/online',
