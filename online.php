@@ -26,11 +26,11 @@ if (isset($_GET['fetch_url'])) {
         'free18feb.sksvpn.shop',
         'free19feb.sksvpn.shop',
         'free20feb.sksvpn.shop',
-        'free21jan.sksvpn.shop',
-        'free22jan.sksvpn.shop',
-        'free23jan.sksvpn.shop',
-        'free24jan.sksvpn.shop',
-        'free25jan.sksvpn.shop'
+        'free21feb.sksvpn.shop',
+        'free22feb.sksvpn.shop',
+        'free23feb.sksvpn.shop',
+        'free24feb.sksvpn.shop',
+        'free25feb.sksvpn.shop'
         
     ];
     
@@ -438,24 +438,24 @@ header("Content-Security-Policy: frame-ancestors *;");
 
             ],
             '🇹🇭 Free 21': [
-                'http://free21jan.sksvpn.shop:81/server/online',
-                'http://free21jan.sksvpn.shop:81/udpserver/online'
+                'http://free21feb.sksvpn.shop:81/server/online',
+                'http://free21feb.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 22': [
-                'http://free22jan.sksvpn.shop:81/server/online',
-                'http://free22jan.sksvpn.shop:81/udpserver/online'
+                'http://free22feb.sksvpn.shop:81/server/online',
+                'http://free22feb.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 23': [
-                'http://free23jan.sksvpn.shop:81/server/online',
-                'http://free23jan.sksvpn.shop:81/udpserver/online'
+                'http://free23feb.sksvpn.shop:81/server/online',
+                'http://free23feb.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 24': [
-                'http://free24jan.sksvpn.shop:81/server/online',
-                'http://free24jan.sksvpn.shop:81/udpserver/online'
+                'http://free24feb.sksvpn.shop:81/server/online',
+                'http://free24feb.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 25': [
-                'http://free25jan.sksvpn.shop:81/server/online',
-                'http://free25jan.sksvpn.shop:81/udpserver/online'
+                'http://free25feb.sksvpn.shop:81/server/online',
+                'http://free25feb.sksvpn.shop:81/udpserver/online'
             ],
         };
 
