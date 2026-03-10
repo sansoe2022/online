@@ -9,10 +9,10 @@ if (isset($_GET['fetch_url'])) {
         'svpnfree1feb.sksvpn.shop',
         'svpnfree2feb.sksvpn.shop',
         'svpnfree3feb.sksvpn.shop',
-        'svpnfree4feb.sksvpn.shop',
-        'svpnfree5feb.sksvpn.shop',
-        'svpnfree6feb.sksvpn.shop',
-        'svpnfree7feb.sksvpn.shop',
+        'svpnfree4mar.sksvpn.shop',
+        'svpnfree5mar.sksvpn.shop',
+        'svpnfree6mar.sksvpn.shop',
+        'svpnfree7mar.sksvpn.shop',
         'svpnfree8feb.sksvpn.shop',
         'svpnfree9feb.sksvpn.shop',
         'svpnfree10feb.sksvpn.shop',
@@ -353,20 +353,20 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://svpnfree3feb.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
-                'http://svpnfree4feb.sksvpn.shop:81/server/online',
-                'http://svpnfree4feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree4mar.sksvpn.shop:81/server/online',
+                'http://svpnfree4mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 5': [
-                'http://svpnfree5feb.sksvpn.shop:81/server/online',
-                'http://svpnfree5feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree5mar.sksvpn.shop:81/server/online',
+                'http://svpnfree5mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
-                'http://svpnfree6feb.sksvpn.shop:81/server/online',
-                'http://svpnfree6feb.sksvpn.shop/udpserver/online'
+                'http://svpnfree6mar.sksvpn.shop:81/server/online',
+                'http://svpnfree6mar.sksvpn.shop/udpserver/online'
             ],
             '🇹🇭 Free 7': [
-                'http://svpnfree7feb.sksvpn.shop:81/server/online',
-                'http://svpnfree7feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree7mar.sksvpn.shop:81/server/online',
+                'http://svpnfree7mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 8': [
                 'http://svpnfree8feb.sksvpn.shop:81/server/online',
