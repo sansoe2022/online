@@ -8,9 +8,9 @@ if (isset($_GET['fetch_url'])) {
         'svpnsg1.sksvpn.shop',
         'svpnus1.sksvpn.shop',
         'svpnin1.sksvpn.shop',
-        'svpnfree1feb.sksvpn.shop',
-        'svpnfree2feb.sksvpn.shop',
-        'svpnfree3feb.sksvpn.shop',
+        'svpnfree1mar.sksvpn.shop',
+        'svpnfree2mar.sksvpn.shop',
+        'svpnfree3mar.sksvpn.shop',
         'svpnfree4mar.sksvpn.shop',
         'svpnfree5mar.sksvpn.shop',
         'svpnfree6mar.sksvpn.shop',
@@ -351,16 +351,16 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://svpnin1.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 1': [
-                'http://svpnfree1feb.sksvpn.shop:81/server/online',
-                'http://svpnfree1feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree1mar.sksvpn.shop:81/server/online',
+                'http://svpnfree1mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 2': [
-                'http://svpnfree2feb.sksvpn.shop:81/server/online',
-                'http://svpnfree2feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree2mar.sksvpn.shop:81/server/online',
+                'http://svpnfree2mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 3': [
-                'http://svpnfree3feb.sksvpn.shop:81/server/online',
-                'http://svpnfree3feb.sksvpn.shop:81/udpserver/online'
+                'http://svpnfree3mar.sksvpn.shop:81/server/online',
+                'http://svpnfree3mar.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
                 'http://svpnfree4mar.sksvpn.shop:81/server/online',
