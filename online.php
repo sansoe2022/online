@@ -5,7 +5,8 @@ if (isset($_GET['fetch_url'])) {
     
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
-        
+        'us1.sksvpn.shop',
+        'in1.sksvpn.shop',
         'free1mar.sksvpn.shop',
         'free2mar.sksvpn.shop',
         'free3mar.sksvpn.shop',
@@ -351,7 +352,14 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            
+            '🇲🇾 US 1': [
+                'http://us1.sksvpn.shop:81/server/online',
+                'http://us1.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇮🇳 IN 1': [
+                'http://in1.sksvpn.shop:81/server/online',
+                'http://in1.sksvpn.shop:81/udpserver/online'
+            ],
             '🇹🇭 Free 1': [
                 'http://free1mar.sksvpn.shop:81/server/online',
                 'http://free1mar.sksvpn.shop:81/udpserver/online'
