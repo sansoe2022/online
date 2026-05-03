@@ -7,7 +7,8 @@ if (isset($_GET['fetch_url'])) {
     $allowed_domains = [
         
         'svpnus1.sksvpn.shop',
-        'svpnin1.sksvpn.shop',
+        'svpnuk1.sksvpn.shop',
+        'svpnsg1.sksvpn.shop',
         'svpnfree1april.sksvpn.shop',
         'svpnfree2april.sksvpn.shop',
         'svpnfree3april.sksvpn.shop',
@@ -338,14 +339,17 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            
+            '🇸🇬 SG 1': [
+                'http://svpnsg1.sksvpn.shop:81/server/online',
+                'http://svpnsg1.sksvpn.shop:81/udpserver/online'
+            ],
             '🇲🇾 US 1': [
                 'http://svpnus1.sksvpn.shop:81/server/online',
                 'http://svpnus1.sksvpn.shop:81/udpserver/online'
             ],
-            '🇳🇪 IN 1': [
-                'http://svpnin1.sksvpn.shop:81/server/online',
-                'http://svpnin1.sksvpn.shop:81/udpserver/online'
+            '🇬🇧 UK 1': [
+                'http://svpnuk1.sksvpn.shop:81/server/online',
+                'http://svpnuk1.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 1': [
                 'http://svpnfree1april.sksvpn.shop:81/server/online',
