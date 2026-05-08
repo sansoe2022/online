@@ -22,11 +22,7 @@ if (isset($_GET['fetch_url'])) {
         'free13may.sksvpn.shop',
         'free14may.sksvpn.shop',
         'free15may.sksvpn.shop',
-        'free16mar.sksvpn.shop',
-        'free17mar.sksvpn.shop',
-        'free18mar.sksvpn.shop',
-        'free19mar.sksvpn.shop',
-        'free20mar.sksvpn.shop',
+    
         'free21april.sksvpn.shop',
         'free22april.sksvpn.shop',
         'free23april.sksvpn.shop',
@@ -421,27 +417,7 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://free15may.sksvpn.shop:81/udpserver/online'
 
             ],
-            '🇹🇭 Free 16': [
-                'http://free16mar.sksvpn.shop:81/server/online',
-                'http://free16mar.sksvpn.shop:81/udpserver/online'
-            ],
-            '🇹🇭 Free 17': [
-                'http://free17mar.sksvpn.shop:81/server/online',
-                'http://free17mar.sksvpn.shop:81/udpserver/online'
-            ],
-            '🇹🇭 Free 18': [
-                'http://free18mar.sksvpn.shop:81/server/online',
-                'http://free18mar.sksvpn.shop:81/udpserver/online'
-            ],
-            '🇹🇭 Free 19': [
-                'http://free19mar.sksvpn.shop:81/server/online',
-                'http://free19mar.sksvpn.shop:81/udpserver/online'
-            ],
-            '🇹🇭 Free 20': [
-                'http://free20mar.sksvpn.shop:81/server/online',
-                'http://free20mar.sksvpn.shop:81/udpserver/online'
-
-            ],
+            
             '🇹🇭 Free 21': [
                 'http://free21april.sksvpn.shop:81/server/online',
                 'http://free21april.sksvpn.shop:81/udpserver/online'
