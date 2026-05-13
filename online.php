@@ -6,6 +6,7 @@ if (isset($_GET['fetch_url'])) {
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
         'us1.sksvpn.shop',
+        'uk1.sksvpn.shop',
         'in1.sksvpn.shop',
         'free1april.sksvpn.shop',
         'free2april.sksvpn.shop',
@@ -351,6 +352,10 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇲🇾 US 1': [
                 'http://us1.sksvpn.shop:81/server/online',
                 'http://us1.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇬🇧 UK 1': [
+                'http://uk1.sksvpn.shop:81/server/online',
+                'http://uk1.sksvpn.shop:81/udpserver/online'
             ],
             '🇮🇳 IN 1': [
                 'http://in1.sksvpn.shop:81/server/online',
