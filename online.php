@@ -8,11 +8,11 @@ if (isset($_GET['fetch_url'])) {
         'us1.sksvpn.shop',
         'uk1.sksvpn.shop',
         'in1.sksvpn.shop',
-        'free1april.sksvpn.shop',
-        'free2april.sksvpn.shop',
-        'free3april.sksvpn.shop',
-        'free4april.sksvpn.shop',
-        'free5april.sksvpn.shop',
+        'free1may.sksvpn.shop',
+        'free2may.sksvpn.shop',
+        'free3may.sksvpn.shop',
+        'free4may.sksvpn.shop',
+        'free5may.sksvpn.shop',
         'free6april.sksvpn.shop',
         'free7april.sksvpn.shop',
         'free8april.sksvpn.shop',
@@ -353,7 +353,7 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://us1.sksvpn.shop:81/server/online',
                 'http://us1.sksvpn.shop:81/udpserver/online'
             ],
-            '🇬🇧 UK 1': [
+            '🇯🇵 JP 1': [
                 'http://uk1.sksvpn.shop:81/server/online',
                 'http://uk1.sksvpn.shop:81/udpserver/online'
             ],
@@ -362,24 +362,24 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://in1.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 1': [
-                'http://free1april.sksvpn.shop:81/server/online',
-                'http://free1april.sksvpn.shop:81/udpserver/online'
+                'http://free1may.sksvpn.shop:81/server/online',
+                'http://free1may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 2': [
-                'http://free2april.sksvpn.shop:81/server/online',
-                'http://free2april.sksvpn.shop:81/udpserver/online'
+                'http://free2may.sksvpn.shop:81/server/online',
+                'http://free2may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 3': [
-                'http://free3april.sksvpn.shop:81/server/online',
-                'http://free3april.sksvpn.shop:81/udpserver/online'
+                'http://free3may.sksvpn.shop:81/server/online',
+                'http://free3may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
-                'http://free4april.sksvpn.shop:81/server/online',
-                'http://free4april.sksvpn.shop:81/udpserver/online'
+                'http://free4may.sksvpn.shop:81/server/online',
+                'http://free4may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 5': [
-                'http://free5april.sksvpn.shop:81/server/online',
-                'http://free5april.sksvpn.shop:81/udpserver/online'
+                'http://free5may.sksvpn.shop:81/server/online',
+                'http://free5may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
                 'http://free6april.sksvpn.shop:81/server/online',
