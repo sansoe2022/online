@@ -349,15 +349,15 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            '🇲🇾 US 1': [
+            '🇺🇸 US 1': [
                 'http://us1.sksvpn.shop:81/server/online',
                 'http://us1.sksvpn.shop:81/udpserver/online'
             ],
-            '🇯🇵 JP 1': [
+            '🇺🇸 US 2': [
                 'http://uk1.sksvpn.shop:81/server/online',
                 'http://uk1.sksvpn.shop:81/udpserver/online'
             ],
-            '🇮🇳 IN 1': [
+            '🇺🇸 US 3': [
                 'http://in1.sksvpn.shop:81/server/online',
                 'http://in1.sksvpn.shop:81/udpserver/online'
             ],
