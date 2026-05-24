@@ -5,7 +5,7 @@ if (isset($_GET['fetch_url'])) {
     
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
-        'jp1.sksvpn.shop'
+        'jp1.sksvpn.shop',
         'free1may.sksvpn.shop',
         'free2may.sksvpn.shop',
         'free3may.sksvpn.shop',
@@ -456,7 +456,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 25': [
                 'http://free25april.sksvpn.shop:81/server/online',
                 'http://free25april.sksvpn.shop:81/udpserver/online'
-            ]
+            ],
         };
 
         // --- Global Variables ---
