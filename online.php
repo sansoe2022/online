@@ -25,7 +25,7 @@ if (isset($_GET['fetch_url'])) {
         'free17may.sksvpn.shop',
         'free18may.sksvpn.shop',
         'free19may.sksvpn.shop',
-        'free20may.sksvpn.shop'
+        'free20may.sksvpn.shop',
         'free21april.sksvpn.shop',    
         'free22april.sksvpn.shop',
         'free23april.sksvpn.shop',
