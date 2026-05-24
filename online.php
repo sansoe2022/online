@@ -456,7 +456,7 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 25': [
                 'http://free25april.sksvpn.shop:81/server/online',
                 'http://free25april.sksvpn.shop:81/udpserver/online'
-            ],
+            ]
         };
 
         // --- Global Variables ---
