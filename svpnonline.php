@@ -6,9 +6,8 @@ if (isset($_GET['fetch_url'])) {
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
         
-        'svpnus1.sksvpn.shop',
-        'svpnuk1.sksvpn.shop',
-        'svpnsg1.sksvpn.shop',
+        'svpnjp1.sksvpn.shop',
+        'svpnjp2.sksvpn.shop',
         'svpnfree1may.sksvpn.shop',
         'svpnfree2may.sksvpn.shop',
         'svpnfree3may.sksvpn.shop',
@@ -18,7 +17,7 @@ if (isset($_GET['fetch_url'])) {
         'svpnfree7may.sksvpn.shop',
         'svpnfree8may.sksvpn.shop',
         'svpnfree9may.sksvpn.shop',
-        'svpnfree10april.sksvpn.shop',
+        'svpn10may.sksvpn.shop',
         
     ];
     
@@ -339,17 +338,13 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            '🇺🇸 US 1': [
-                'http://svpnus1.sksvpn.shop:81/server/online',
-                'http://svpnus1.sksvpn.shop:81/udpserver/online'
+            '🇯🇵 JP 1': [
+                'http://svpnjp1.sksvpn.shop:81/server/online',
+                'http://svpnjp1.sksvpn.shop:81/udpserver/online'
             ],
-            '🇺🇸 US 2': [
-                'http://svpnuk1.sksvpn.shop:81/server/online',
-                'http://svpnuk1.sksvpn.shop:81/udpserver/online'
-            ],
-            '🇺🇸 US 3': [
-                'http://svpnsg1.sksvpn.shop:81/server/online',
-                'http://svpnsg1.sksvpn.shop:81/udpserver/online'
+            '🇯🇵 JP 2': [
+                'http://svpnjp2.sksvpn.shop:81/server/online',
+                'http://svpnjp2.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 1': [
                 'http://svpnfree1may.sksvpn.shop:81/server/online',
@@ -388,8 +383,8 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://svpnfree9may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 10': [
-                'http://svpnfree10april.sksvpn.shop:81/server/online',
-                'http://svpnfree10april.sksvpn.shop:81/udpserver/online'
+                'http://svpn10may.sksvpn.shop:81/server/online',
+                'http://svpn10may.sksvpn.shop:81/udpserver/online'
             ],
         };
 
