@@ -5,12 +5,12 @@ if (isset($_GET['fetch_url'])) {
     
     // လုံခြုံရေးအတွက်၊ ခွင့်ပြုထားတဲ့ domain တွေကိုပဲ request လုပ်ခိုင်းပါမယ်။
     $allowed_domains = [
-        'us1.sksvpn.shop',
-        'free1may.sksvpn.shop',
-        'free2may.sksvpn.shop',
-        'free3may.sksvpn.shop',
-        'free4may.sksvpn.shop',
-        'free5may.sksvpn.shop',
+        
+        'free1june.sksvpn.shop',
+        'free2june.sksvpn.shop',
+        'free3june.sksvpn.shop',
+        'free4june.sksvpn.shop',
+        'free5june.sksvpn.shop',
         'free6may.sksvpn.shop',
         'free7may.sksvpn.shop',
         'free8may.sksvpn.shop',
@@ -351,29 +351,26 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            '🇺🇲 US 1': [
-                'http://us1.sksvpn.shop:81/server/online',
-                'http://us1.sksvpn.shop:81/udpserver/online'
-            ],
+            
             '🇹🇭 Free 1': [
-                'http://free1may.sksvpn.shop:81/server/online',
-                'http://free1may.sksvpn.shop:81/udpserver/online'
+                'http://free1june.sksvpn.shop:81/server/online',
+                'http://free1june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 2': [
-                'http://free2may.sksvpn.shop:81/server/online',
-                'http://free2may.sksvpn.shop:81/udpserver/online'
+                'http://free2june.sksvpn.shop:81/server/online',
+                'http://free2june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 3': [
-                'http://free3may.sksvpn.shop:81/server/online',
-                'http://free3may.sksvpn.shop:81/udpserver/online'
+                'http://free3june.sksvpn.shop:81/server/online',
+                'http://free3june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 4': [
-                'http://free4may.sksvpn.shop:81/server/online',
-                'http://free4may.sksvpn.shop:81/udpserver/online'
+                'http://free4june.sksvpn.shop:81/server/online',
+                'http://free4june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 5': [
-                'http://free5may.sksvpn.shop:81/server/online',
-                'http://free5may.sksvpn.shop:81/udpserver/online'
+                'http://free5june.sksvpn.shop:81/server/online',
+                'http://free5june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
                 'http://free6may.sksvpn.shop:81/server/online',
