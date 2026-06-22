@@ -26,11 +26,11 @@ if (isset($_GET['fetch_url'])) {
         'free18may.sksvpn.shop',
         'free19may.sksvpn.shop',
         'free20may.sksvpn.shop',
-        'free21april.sksvpn.shop',    
-        'free22april.sksvpn.shop',
-        'free23april.sksvpn.shop',
-        'free24april.sksvpn.shop',
-        'free25april.sksvpn.shop'
+        'free21june.sksvpn.shop',    
+        'free22june.sksvpn.shop',
+        'free23june.sksvpn.shop',
+        'free24june.sksvpn.shop',
+        'free25june.sksvpn.shop'
         
     ];
     
@@ -435,24 +435,24 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://free20may.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 21': [
-                'http://free21april.sksvpn.shop:81/server/online',
-                'http://free21april.sksvpn.shop:81/udpserver/online'
+                'http://free21june.sksvpn.shop:81/server/online',
+                'http://free21june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 22': [
-                'http://free22april.sksvpn.shop:81/server/online',
-                'http://free22april.sksvpn.shop:81/udpserver/online'
+                'http://free22june.sksvpn.shop:81/server/online',
+                'http://free22june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 23': [
-                'http://free23april.sksvpn.shop:81/server/online',
-                'http://free23april.sksvpn.shop:81/udpserver/online'
+                'http://free23june.sksvpn.shop:81/server/online',
+                'http://free23june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 24': [
-                'http://free24april.sksvpn.shop:81/server/online',
-                'http://free24april.sksvpn.shop:81/udpserver/online'
+                'http://free24june.sksvpn.shop:81/server/online',
+                'http://free24june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 25': [
-                'http://free25april.sksvpn.shop:81/server/online',
-                'http://free25april.sksvpn.shop:81/udpserver/online'
+                'http://free25june.sksvpn.shop:81/server/online',
+                'http://free25june.sksvpn.shop:81/udpserver/online'
             ],
         };
 
