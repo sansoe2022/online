@@ -11,11 +11,11 @@ if (isset($_GET['fetch_url'])) {
         'free3june.sksvpn.shop',
         'free4june.sksvpn.shop',
         'free5june.sksvpn.shop',
-        'free6may.sksvpn.shop',
-        'free7may.sksvpn.shop',
-        'free8may.sksvpn.shop',
-        'free9may.sksvpn.shop',
-        'free10may.sksvpn.shop',
+        'free6june.sksvpn.shop',
+        'free7june.sksvpn.shop',
+        'free8june.sksvpn.shop',
+        'free9june.sksvpn.shop',
+        'free10june.sksvpn.shop',
         'free11june.sksvpn.shop',
         'free12june.sksvpn.shop',
         'free13june.sksvpn.shop',
@@ -373,24 +373,24 @@ header("Content-Security-Policy: frame-ancestors *;");
                 'http://free5june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 6': [
-                'http://free6may.sksvpn.shop:81/server/online',
-                'http://free6may.sksvpn.shop/udpserver/online'
+                'http://free6june.sksvpn.shop:81/server/online',
+                'http://free6june.sksvpn.shop/udpserver/online'
             ],
             '🇹🇭 Free 7': [
-                'http://free7may.sksvpn.shop:81/server/online',
-                'http://free7may.sksvpn.shop:81/udpserver/online'
+                'http://free7june.sksvpn.shop:81/server/online',
+                'http://free7june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 8': [
-                'http://free8may.sksvpn.shop:81/server/online',
-                'http://free8may.sksvpn.shop:81/udpserver/online'
+                'http://free8june.sksvpn.shop:81/server/online',
+                'http://free8june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 9': [
-                'http://free9may.sksvpn.shop:81/server/online',
-                'http://free9may.sksvpn.shop:81/udpserver/online'
+                'http://free9june.sksvpn.shop:81/server/online',
+                'http://free9june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 10': [
-                'http://free10may.sksvpn.shop:81/server/online',
-                'http://free10may.sksvpn.shop:81/udpserver/online'
+                'http://free10june.sksvpn.shop:81/server/online',
+                'http://free10june.sksvpn.shop:81/udpserver/online'
             ],
             '🇹🇭 Free 11': [
                 'http://free11june.sksvpn.shop:81/server/online',
