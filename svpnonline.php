@@ -346,7 +346,7 @@ header("Content-Security-Policy: frame-ancestors *;");
     <script>
         // Server list (သင့် server list အတိုင်း)
         const servers = {
-            '🇺🇲 US': [
+            '🇰🇷 KR': [
                 'http://us.sksvpn.shop:81/server/online'
             ],
             '🇯🇵 JP': [
