@@ -26,6 +26,8 @@ if (isset($_GET['fetch_url'])) {
         'svpn16june.sksvpn.shop',
         'svpn17june.sksvpn.shop',
         'svpn18june.sksvpn.shop',
+        'svpn19june.sksvpn.shop',
+        'svpn20june.sksvpn.shop',
         
     ];
     
@@ -423,6 +425,14 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 18': [
                 'http://svpn18june.sksvpn.shop:81/server/online',
                 'http://svpn18june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 19': [
+                'http://svpn19june.sksvpn.shop:81/server/online',
+                'http://svpn19june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 20': [
+                'http://svpn20june.sksvpn.shop:81/server/online',
+                'http://svpn20june.sksvpn.shop:81/udpserver/online'
             ],
         };
 
