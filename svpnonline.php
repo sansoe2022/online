@@ -28,6 +28,11 @@ if (isset($_GET['fetch_url'])) {
         'svpn18june.sksvpn.shop',
         'svpn19june.sksvpn.shop',
         'svpn20june.sksvpn.shop',
+        'svpn21june.sksvpn.shop',
+        'svpn22june.sksvpn.shop',
+        'svpn23june.sksvpn.shop',
+        'svpn24june.sksvpn.shop',
+        'svpn25june.sksvpn.shop',
         
     ];
     
@@ -433,6 +438,26 @@ header("Content-Security-Policy: frame-ancestors *;");
             '🇹🇭 Free 20': [
                 'http://svpn20june.sksvpn.shop:81/server/online',
                 'http://svpn20june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 21': [
+                'http://svpn21june.sksvpn.shop:81/server/online',
+                'http://svpn21june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 22': [
+                'http://svpn22june.sksvpn.shop:81/server/online',
+                'http://svpn22june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 23': [
+                'http://svpn23june.sksvpn.shop:81/server/online',
+                'http://svpn23june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 24': [
+                'http://svpn24june.sksvpn.shop:81/server/online',
+                'http://svpn24june.sksvpn.shop:81/udpserver/online'
+            ],
+            '🇹🇭 Free 25': [
+                'http://svpn25june.sksvpn.shop:81/server/online',
+                'http://svpn25june.sksvpn.shop:81/udpserver/online'
             ],
         };
 
